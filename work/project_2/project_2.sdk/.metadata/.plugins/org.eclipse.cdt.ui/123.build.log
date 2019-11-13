@@ -1,0 +1,23 @@
+13:13:33 **** Incremental Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Stage6_Assembly.s'
+'Invoking: ARM v7 gcc assembler'
+arm-none-eabi-gcc -c  -o"src/Stage6_Assembly.o" "../src/Stage6_Assembly.s"
+'Finished building: ../src/Stage6_Assembly.s'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/Stage6_Assembly.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82896	   3612	  24880	 111388	  1b31c	123.elf
+'Finished building: 123.elf.size'
+' '
+
+13:13:33 Build Finished (took 488ms)
+

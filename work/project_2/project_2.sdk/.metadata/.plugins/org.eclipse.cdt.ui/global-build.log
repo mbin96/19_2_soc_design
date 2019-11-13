@@ -1,0 +1,444 @@
+13:04:01 **** Build of project 123_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project 123 ****
+
+Nothing to build for project 123
+13:04:22 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:37:24: fatal error: FFT_Header.h: No such file or directory
+ #include "FFT_Header.h"
+                        ^
+compilation terminated.
+make: *** [src/main.o] 오류 1
+13:04:30 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:40:0: warning: "N" redefined
+ #define N 128
+ 
+In file included from ../src/main.c:37:0:
+../src/FFT_Header.h:1:0: note: this is the location of the previous definition
+ #define N 64
+ 
+../src/main.c: In function 'DFT':
+../src/main.c:63:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[128] = {0,};
+      ^~~~~~
+../src/main.c:62:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[128] = {0,};
+      ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:209:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("FFT model SNR : %d dB\r\n",(int)SNR);
+  ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\user\project_2\project_2.sdk\123\Debug/../src/main.c:208: undefined reference to `log10'
+collect2.exe: error: ld returned 1 exit status
+make: *** [123.elf] 오류 1
+13:05:07 **** Clean-only build of configuration Debug for project 123 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  123.elf.size  123.elf
+' '
+13:05:08 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:40:0: warning: "N" redefined
+ #define N 128
+ 
+In file included from ../src/main.c:37:0:
+../src/FFT_Header.h:1:0: note: this is the location of the previous definition
+ #define N 64
+ 
+../src/main.c: In function 'DFT':
+../src/main.c:63:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[128] = {0,};
+      ^~~~~~
+../src/main.c:62:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[128] = {0,};
+      ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:209:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("FFT model SNR : %d dB\r\n",(int)SNR);
+  ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80608	   4124	  25392	 110124	  1ae2c	123.elf
+'Finished building: 123.elf.size'
+' '
+13:05:09 **** Clean-only build of configuration Debug for project 123 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  123.elf.size  123.elf
+' '
+13:05:10 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:40:0: warning: "N" redefined
+ #define N 128
+ 
+In file included from ../src/main.c:37:0:
+../src/FFT_Header.h:1:0: note: this is the location of the previous definition
+ #define N 64
+ 
+../src/main.c: In function 'DFT':
+../src/main.c:63:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[128] = {0,};
+      ^~~~~~
+../src/main.c:62:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[128] = {0,};
+      ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:209:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("FFT model SNR : %d dB\r\n",(int)SNR);
+  ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80608	   4124	  25392	 110124	  1ae2c	123.elf
+'Finished building: 123.elf.size'
+' '
+13:06:32 **** Incremental Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:40:0: warning: "N" redefined
+ #define N 128
+ 
+In file included from ../src/main.c:37:0:
+../src/FFT_Header.h:1:0: note: this is the location of the previous definition
+ #define N 64
+ 
+../src/main.c: In function 'DFT':
+../src/main.c:63:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[128] = {0,};
+      ^~~~~~
+../src/main.c:62:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[128] = {0,};
+      ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:209:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("FFT model SNR : %d dB\r\n",(int)SNR);
+  ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80544	   4124	  25392	 110060	  1adec	123.elf
+'Finished building: 123.elf.size'
+' '
+13:10:25 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Stage6_Assembly.s'
+'Invoking: ARM v7 gcc assembler'
+arm-none-eabi-gcc -c  -o"src/Stage6_Assembly.o" "../src/Stage6_Assembly.s"
+'Finished building: ../src/Stage6_Assembly.s'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/Stage6_Assembly.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80800	   4124	  25392	 110316	  1aeec	123.elf
+'Finished building: 123.elf.size'
+' '
+13:10:33 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:40:0: warning: "N" redefined
+ #define N 128
+ 
+In file included from ../src/main.c:37:0:
+../src/FFT_Header.h:1:0: note: this is the location of the previous definition
+ #define N 64
+ 
+../src/main.c: In function 'DFT':
+../src/main.c:63:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[128] = {0,};
+      ^~~~~~
+../src/main.c:62:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[128] = {0,};
+      ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:209:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("FFT model SNR : %d dB\r\n",(int)SNR);
+  ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/Stage6_Assembly.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80800	   4124	  25392	 110316	  1aeec	123.elf
+'Finished building: 123.elf.size'
+' '
+13:10:41 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DFT':
+../src/main.c:63:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[N] = {0,};
+      ^~~~~~
+../src/main.c:62:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[N] = {0,};
+      ^~~~~~
+../src/main.c: In function 'FFT':
+../src/main.c:94:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[N];
+      ^~~~~~
+../src/main.c:93:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[N];
+      ^~~~~~
+../src/main.c: In function 'FFT_Assembly':
+../src/main.c:170:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[N];
+      ^~~~~~
+../src/main.c:169:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[N];
+      ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:275:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("FFT model SNR : %d dB\r\n",(int)SNR);
+  ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/Stage6_Assembly.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82896	   4124	  24880	 111900	  1b51c	123.elf
+'Finished building: 123.elf.size'
+' '
+13:10:52 **** Auto Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../123_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DFT':
+../src/main.c:63:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[N] = {0,};
+      ^~~~~~
+../src/main.c:62:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[N] = {0,};
+      ^~~~~~
+../src/main.c: In function 'FFT':
+../src/main.c:94:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[N];
+      ^~~~~~
+../src/main.c:93:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[N];
+      ^~~~~~
+../src/main.c: In function 'FFT_Assembly':
+../src/main.c:170:6: warning: variable 'out_im' set but not used [-Wunused-but-set-variable]
+  int out_im[N];
+      ^~~~~~
+../src/main.c:169:6: warning: variable 'out_re' set but not used [-Wunused-but-set-variable]
+  int out_re[N];
+      ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:275:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("FFT model SNR : %d dB\r\n",(int)SNR);
+  ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/Stage6_Assembly.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82896	   3612	  24880	 111388	  1b31c	123.elf
+'Finished building: 123.elf.size'
+' '
+13:12:27 **** Incremental Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Stage6_Assembly.s'
+'Invoking: ARM v7 gcc assembler'
+arm-none-eabi-gcc -c  -o"src/Stage6_Assembly.o" "../src/Stage6_Assembly.s"
+'Finished building: ../src/Stage6_Assembly.s'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/Stage6_Assembly.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82896	   3612	  24880	 111388	  1b31c	123.elf
+'Finished building: 123.elf.size'
+' '
+13:13:33 **** Incremental Build of configuration Debug for project 123 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Stage6_Assembly.s'
+'Invoking: ARM v7 gcc assembler'
+arm-none-eabi-gcc -c  -o"src/Stage6_Assembly.o" "../src/Stage6_Assembly.s"
+'Finished building: ../src/Stage6_Assembly.s'
+' '
+'Building target: 123.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../123_bsp/ps7_cortexa9_0/lib -o "123.elf"  ./src/Stage6_Assembly.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 123.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 123.elf  |tee "123.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82896	   3612	  24880	 111388	  1b31c	123.elf
+'Finished building: 123.elf.size'
+' '
