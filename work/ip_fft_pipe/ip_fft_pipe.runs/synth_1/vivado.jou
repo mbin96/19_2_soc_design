@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Nov 18 12:49:45 2019
+# Process ID: 18588
+# Current directory: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/ip_fft_pipe/ip_fft_pipe.runs/synth_1
+# Command line: vivado.exe -log tb_Top_FFT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_Top_FFT.tcl
+# Log file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/ip_fft_pipe/ip_fft_pipe.runs/synth_1/tb_Top_FFT.vds
+# Journal file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/ip_fft_pipe/ip_fft_pipe.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tb_Top_FFT.tcl -notrace

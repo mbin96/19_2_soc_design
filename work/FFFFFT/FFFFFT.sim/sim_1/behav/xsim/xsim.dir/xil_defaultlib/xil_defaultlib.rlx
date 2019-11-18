@@ -1,0 +1,13 @@
+0.6
+2017.4
+Jan 30 2018
+15:48:17
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sim_1/imports/Lab_SD2019_2_prob/tb_Top_FFT.v,1573111596,verilog,,,,tb_Top_FFT,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v,1573123778,verilog,,C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Counter.v,,BF,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Counter.v,1573123792,verilog,,C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v,,Counter,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v,1573187044,verilog,,C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v,,MULT,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v,1573123896,verilog,,C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v,,Shift_Reg,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v,1573123858,verilog,,C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage6.v,,Stage,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage6.v,1574049474,verilog,,C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v,,Stage6,,,,,,,,
+C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v,1573123922,verilog,,C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sim_1/imports/Lab_SD2019_2_prob/tb_Top_FFT.v,,Top_FFT,,,,,,,,

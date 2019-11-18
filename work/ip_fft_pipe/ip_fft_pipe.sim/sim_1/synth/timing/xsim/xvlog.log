@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/ip_fft_pipe/ip_fft_pipe.sim/sim_1/synth/timing/xsim/tb_Top_FFT_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Top_FFT
+INFO: [VRFC 10-311] analyzing module glbl
