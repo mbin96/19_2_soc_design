@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-`define p 12
+`define p 20
 module tb_Top_FFT;
 
 reg nrst,clk;

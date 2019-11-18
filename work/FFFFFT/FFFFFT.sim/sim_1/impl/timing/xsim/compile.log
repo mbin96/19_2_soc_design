@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.sim/sim_1/impl/timing/xsim/tb_Top_FFT_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BF
+INFO: [VRFC 10-311] analyzing module BF__parameterized0
+INFO: [VRFC 10-311] analyzing module BF__parameterized1
+INFO: [VRFC 10-311] analyzing module BF__parameterized2
+INFO: [VRFC 10-311] analyzing module BF__parameterized3
+INFO: [VRFC 10-311] analyzing module BF__parameterized4
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-311] analyzing module MULT
+INFO: [VRFC 10-311] analyzing module MULT__parameterized0
+INFO: [VRFC 10-311] analyzing module MULT__parameterized1
+INFO: [VRFC 10-311] analyzing module MULT__parameterized2
+INFO: [VRFC 10-311] analyzing module MULT__parameterized3
+INFO: [VRFC 10-311] analyzing module Shift_Reg
+INFO: [VRFC 10-311] analyzing module Shift_Reg_4
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized0
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized0_3
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized1
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized1_2
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized2
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized2_1
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized3
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized3_0
+INFO: [VRFC 10-311] analyzing module Stage
+INFO: [VRFC 10-311] analyzing module Stage6
+INFO: [VRFC 10-311] analyzing module Stage__parameterized0
+INFO: [VRFC 10-311] analyzing module Stage__parameterized1
+INFO: [VRFC 10-311] analyzing module Stage__parameterized2
+INFO: [VRFC 10-311] analyzing module Stage__parameterized3
+INFO: [VRFC 10-311] analyzing module Top_FFT
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sim_1/imports/Lab_SD2019_2_prob/tb_Top_FFT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Top_FFT

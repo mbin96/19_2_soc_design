@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Nov 18 14:15:06 2019
+# Process ID: 23904
+# Current directory: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.sim/sim_1/synth/timing/xsim/xsim.dir/tb_Top_FFT_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.sim/sim_1/synth/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.sim/sim_1/synth/timing/xsim/xsim.dir/tb_Top_FFT_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 14:15:07 2019...

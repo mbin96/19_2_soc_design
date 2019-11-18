@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_Top_FFT_time_synth.v" \
+"../../../../../FFFFFT.srcs/sim_1/imports/Lab_SD2019_2_prob/tb_Top_FFT.v" \
+
+# Do not sort compile order
+nosort

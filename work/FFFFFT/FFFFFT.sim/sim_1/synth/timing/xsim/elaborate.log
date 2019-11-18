@@ -1,0 +1,61 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto efa859acfc16402a843d7ca389271ae7 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_Top_FFT_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_Top_FFT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_Top_FFT_time_synth.sdf", for root module "tb_Top_FFT/top0".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_Top_FFT_time_synth.sdf", for root module "tb_Top_FFT/top0".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.Counter
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.BF
+Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.MULT
+Compiling module simprims_ver.SRLC32E_default
+Compiling module xil_defaultlib.Shift_Reg
+Compiling module xil_defaultlib.Shift_Reg_4
+Compiling module xil_defaultlib.Stage
+Compiling module xil_defaultlib.BF__parameterized0
+Compiling module xil_defaultlib.MULT__parameterized0
+Compiling module simprims_ver.SRL16E_default
+Compiling module xil_defaultlib.Shift_Reg__parameterized0
+Compiling module xil_defaultlib.Shift_Reg__parameterized0_3
+Compiling module xil_defaultlib.Stage__parameterized0
+Compiling module xil_defaultlib.BF__parameterized1
+Compiling module xil_defaultlib.MULT__parameterized1
+Compiling module xil_defaultlib.Shift_Reg__parameterized1
+Compiling module xil_defaultlib.Shift_Reg__parameterized1_2
+Compiling module xil_defaultlib.Stage__parameterized1
+Compiling module xil_defaultlib.BF__parameterized2
+Compiling module xil_defaultlib.MULT__parameterized2
+Compiling module xil_defaultlib.Shift_Reg__parameterized2
+Compiling module xil_defaultlib.Shift_Reg__parameterized2_1
+Compiling module xil_defaultlib.Stage__parameterized2
+Compiling module xil_defaultlib.BF__parameterized3
+Compiling module xil_defaultlib.MULT__parameterized3
+Compiling module xil_defaultlib.Shift_Reg__parameterized3
+Compiling module xil_defaultlib.Shift_Reg__parameterized3_0
+Compiling module xil_defaultlib.Stage__parameterized3
+Compiling module xil_defaultlib.BF__parameterized4
+Compiling module xil_defaultlib.Stage6
+Compiling module xil_defaultlib.Top_FFT
+Compiling module xil_defaultlib.tb_Top_FFT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Top_FFT_time_synth
