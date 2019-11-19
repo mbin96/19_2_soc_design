@@ -3,63 +3,10 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto efa859acfc16402a843d7ca389271ae7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_Top_FFT_behav xil_defaultlib.tb_Top_FFT xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 22 differs from formal bit length 21 for port inReal [C:/Users/hyeon/project_19-2/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:67]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port cnt [C:/Users/hyeon/project_19-2/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reordering.v:23]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port cnt [C:/Users/hyeon/project_19-2/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reordering.v:24]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port cnt [C:/Users/hyeon/project_19-2/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reordering.v:25]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port cnt [C:/Users/hyeon/project_19-2/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reordering.v:26]
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v" Line 34. Module Top_FFT doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Counter.v" Line 34. Module Counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v" Line 34. Module Stage(BW=17) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=17) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=17) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v" Line 34. Module BF(BW=17) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v" Line 34. Module MULT(BW=17) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v" Line 34. Module Stage(BW=18,N=16) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=18,N=16) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=18,N=16) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v" Line 34. Module BF(BW=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v" Line 34. Module MULT(BW=18,N=16) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v" Line 34. Module Stage(BW=19,N=8) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=19,N=8) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=19,N=8) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v" Line 34. Module BF(BW=19) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v" Line 34. Module MULT(BW=19,N=8) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v" Line 34. Module Stage(BW=20,N=4) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=20,N=4) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=20,N=4) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v" Line 34. Module BF(BW=20) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v" Line 34. Module MULT(BW=20,N=4) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v" Line 34. Module Stage(BW=21,N=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=21,N=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v" Line 34. Module Shift_Reg(BW=21,N=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v" Line 34. Module BF(BW=21) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v" Line 34. Module MULT(BW=21,N=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage6.v" Line 34. Module Stage6(BW=22) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v" Line 34. Module BF(BW=22) doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Counter
-Compiling module xil_defaultlib.Shift_Reg(BW=17)
-Compiling module xil_defaultlib.BF(BW=17)
-Compiling module xil_defaultlib.MULT(BW=17)
-Compiling module xil_defaultlib.Stage(BW=17)
-Compiling module xil_defaultlib.Shift_Reg(BW=18,N=16)
-Compiling module xil_defaultlib.BF(BW=18)
-Compiling module xil_defaultlib.MULT(BW=18,N=16)
-Compiling module xil_defaultlib.Stage(BW=18,N=16)
-Compiling module xil_defaultlib.Shift_Reg(BW=19,N=8)
-Compiling module xil_defaultlib.BF(BW=19)
-Compiling module xil_defaultlib.MULT(BW=19,N=8)
-Compiling module xil_defaultlib.Stage(BW=19,N=8)
-Compiling module xil_defaultlib.Shift_Reg(BW=20,N=4)
-Compiling module xil_defaultlib.BF(BW=20)
-Compiling module xil_defaultlib.MULT(BW=20,N=4)
-Compiling module xil_defaultlib.Stage(BW=20,N=4)
-Compiling module xil_defaultlib.Shift_Reg(BW=21,N=2)
-Compiling module xil_defaultlib.BF(BW=21)
-Compiling module xil_defaultlib.MULT(BW=21,N=2)
-Compiling module xil_defaultlib.Stage(BW=21,N=2)
-Compiling module xil_defaultlib.BF(BW=22)
-Compiling module xil_defaultlib.Stage6(BW=22)
-Compiling module xil_defaultlib.Top_FFT
-Compiling module xil_defaultlib.tb_Top_FFT
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_Top_FFT_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

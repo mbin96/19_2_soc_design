@@ -50,6 +50,7 @@ wire [in_BW+2:0] sig3[1:0];
 wire [in_BW+3:0] sig4[1:0];
 wire [in_BW+4:0] sig5[1:0];
 wire [in_BW+5:0] sig6[1:0];
+wire [in_BW+5:0] sig7[1:0];
 
 wire	en_s1,en_s5,en_s6;
 reg	en_s2;
@@ -62,10 +63,15 @@ Stage #(in_BW+2,16) stage2(nrst,clk,en_s2,cnt,sig1[0],sig1[1], valid, sig2[0],si
 Stage #(in_BW+3,8 ) stage3(nrst,clk,en_s3[1],cnt,sig2[0],sig2[1], valid, sig3[0],sig3[1]);
 Stage #(in_BW+4,4 ) stage4(nrst,clk,en_s4[2],cnt,sig3[0],sig3[1], valid, sig4[0],sig4[1]);
 Stage #(in_BW+5,2 ) stage5(nrst,clk,en_s5,cnt,sig4[0],sig4[1], valid, sig5[0],sig5[1]);
-Stage6 #(in_BW+6,1 ) stage6(nrst,clk,en_s6   ,sig5[0],sig5[1], valid, sig6[0],sig6[1]);
+Stage6 #(in_BW+6,1 ) stage6(nrst,clk,en_s6, sig5[0],sig5[1], valid, sig6[0], sig6[1]);
+Reordering #(in_BW+6,64,3) reorder(nrst,clk, cnt,sig6[0], sig6[1], valid, sig7[0], sig7[1]);
 
-assign outReal = sig6[0][in_BW+5 : cut_BW];
-assign outImag = sig6[1][in_BW+5 : cut_BW];
+assign outReal = sig7[0][in_BW+5 : cut_BW];
+assign outImag = sig7[1][in_BW+5 : cut_BW];
+
+
+// assign outReal = sig6[0][in_BW+5 : cut_BW];
+// assign outImag = sig6[1][in_BW+5 : cut_BW];
 
 assign en_s1 = cnt[5];
 always@(posedge clk)
