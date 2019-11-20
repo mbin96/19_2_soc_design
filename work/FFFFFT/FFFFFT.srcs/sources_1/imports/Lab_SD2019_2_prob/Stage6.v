@@ -32,7 +32,7 @@ Revision History
 *******************************************************************************/
 
 module Stage6(nrst,clk,bf_en,inReal,inImag,valid,outReal,outImag);
-parameter BW=16;
+parameter BW=22;
 parameter N =1;
 
 input 			nrst,clk,bf_en;

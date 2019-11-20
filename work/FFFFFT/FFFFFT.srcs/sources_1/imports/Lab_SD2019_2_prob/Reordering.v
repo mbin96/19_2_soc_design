@@ -11,14 +11,12 @@ module Reordering
 	output[BW-1:0] 	outReal,outImag
 );
 
-wire [BW-1:0] rr0_in[1:0];
-wire [BW-1:0] rr1_in[1:0];
 wire [BW-1:0] rr0_out[1:0];
 wire [BW-1:0] rr1_out[1:0];
+
 wire [5:0] delayedCnt;
 reg regOutFlag;
-
-//¾Õ¿¡ µé¾î°£ ÆÄÀÌÇÁ¶óÀÎ °¹¼ö¿¡ ¸ÂÃç ÇØ¾ßÇÏ´Âµ¥ ³»ºÎ ·¹Áö½ºÅÍÀÇ µô·¹ÀÌµµ ÀÖÀ½. ¾Õ¿¡ ºí·°  -3 ÇÒ°Í?
+reg [BW-1:0] inBufferd[1:0];
 Shift_Reg #(6,Delay) sr0(nrst,clk,cnt,valid,delayedCnt);
 
 Reorder_Reg #(BW,N) rr00(nrst,clk,delayedCnt, regOutFlag,inReal,valid,rr0_out[0]);//in first
@@ -37,8 +35,10 @@ assign outImag = !regOutFlag ? rr1_out[1] : rr0_out[1];
 
 //flag
 always@(posedge clk)
-	if(!nrst)
+	if(!nrst) begin
         regOutFlag <= 0;
+     end
+        
 	else if (valid) begin
  	    if (delayedCnt == 0) begin
             regOutFlag <= !regOutFlag;
@@ -63,7 +63,7 @@ always@(posedge clk)
 // 	end
 
 
-// //TODO - pipeline ? ˆì§??Š¤?„° ?‘ê°œì? ë¨¹ìŠ¤ë¡? ?ŒŒ?´?”„ ?¼?¸ êµ¬ì¡°ë¡? ë§Œë“¤?–´ì£¼ê¸°
+// //TODO - pipeline ?ï¿½ï¿½ï¿???ï¿½ï¿½?ï¿½ï¿½ ?ï¿½ï¿½ê°œï¿½? ë¨¹ìŠ¤ï¿?? ?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ ?ï¿½ï¿½?ï¿½ï¿½ êµ¬ì¡°ï¿?? ë§Œë“¤?ï¿½ï¿½ì£¼ê¸°
 
 // //shift register for fifo
 // always@(posedge clk)

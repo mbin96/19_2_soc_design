@@ -12,7 +12,7 @@ module Reorder_Reg
 );
 
 reg [BW-1:0] sr[N-1:0];
-integer revCnt;
+reg [5:0] revCnt;
 // reg outFlag;
 //reordering
 integer i;
