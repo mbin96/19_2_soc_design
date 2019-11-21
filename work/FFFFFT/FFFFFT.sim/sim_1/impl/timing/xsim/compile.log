@@ -11,6 +11,11 @@ INFO: [VRFC 10-311] analyzing module MULT__parameterized0
 INFO: [VRFC 10-311] analyzing module MULT__parameterized1
 INFO: [VRFC 10-311] analyzing module MULT__parameterized2
 INFO: [VRFC 10-311] analyzing module MULT__parameterized3
+INFO: [VRFC 10-311] analyzing module Reorder_Reg
+INFO: [VRFC 10-311] analyzing module Reorder_Reg_5
+INFO: [VRFC 10-311] analyzing module Reorder_Reg_6
+INFO: [VRFC 10-311] analyzing module Reorder_Reg_7
+INFO: [VRFC 10-311] analyzing module Reordering
 INFO: [VRFC 10-311] analyzing module Shift_Reg
 INFO: [VRFC 10-311] analyzing module Shift_Reg_4
 INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized0
@@ -21,6 +26,7 @@ INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized2
 INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized2_1
 INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized3
 INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized3_0
+INFO: [VRFC 10-311] analyzing module Shift_Reg__parameterized4
 INFO: [VRFC 10-311] analyzing module Stage
 INFO: [VRFC 10-311] analyzing module Stage6
 INFO: [VRFC 10-311] analyzing module Stage__parameterized0

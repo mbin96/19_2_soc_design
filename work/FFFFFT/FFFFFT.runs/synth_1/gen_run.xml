@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1574049757">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1574234210">
   <File Type="PA-TCL" Name="Top_FFT.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_FFT_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_FFT_reports.tcl"/>
   <File Type="RDS-RDS" Name="Top_FFT.vds"/>
   <File Type="RDS-UTIL" Name="Top_FFT_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_FFT_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Top_FFT.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_FFT_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_FFT_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Lab_SD2019_2_prob/BF.v">
@@ -30,6 +33,20 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../lab_source/Lab_SD2019_2_prob/MULT.v"/>
         <Attr Name="ImportTime" Val="1573187044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab_SD2019_2_prob/Reorder_Reg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab_SD2019_2_prob/Reordering.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -71,6 +88,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Top_FFT"/>
@@ -86,6 +111,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/FFT.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

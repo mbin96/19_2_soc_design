@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Top_FFT_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Top_FFT" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="14059580850fs"></ZoomStartTime>
+      <ZoomEndTime time="14482580851fs"></ZoomEndTime>
+      <Cursor1Time time="11605424000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/tb_Top_FFT/nrst" type="logic">
+      <obj_property name="ElementShortName">nrst</obj_property>
+      <obj_property name="ObjectShortName">nrst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/input_re" type="array">
+      <obj_property name="ElementShortName">input_re[191:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_re[191:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/input_im" type="array">
+      <obj_property name="ElementShortName">input_im[191:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_im[191:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/output_re" type="array">
+      <obj_property name="ElementShortName">output_re[191:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">output_re[191:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/output_im" type="array">
+      <obj_property name="ElementShortName">output_im[191:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">output_im[191:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/inReal" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">inReal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inReal[15:0]</obj_property>
+      <obj_property name="label">inReal[15:0]_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/inImag" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">inImag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inImag[15:0]</obj_property>
+      <obj_property name="label">inImag[15:0]_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/outReal" type="array">
+      <obj_property name="ElementShortName">outReal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outReal[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/outImag" type="array">
+      <obj_property name="ElementShortName">outImag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outImag[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/clkcnt" type="array">
+      <obj_property name="ElementShortName">clkcnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkcnt[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/dumpfile" type="array">
+      <obj_property name="ElementShortName">dumpfile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dumpfile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/top0/reorder/rr00/revCnt" type="array">
+      <obj_property name="ElementShortName">revCnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">revCnt[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/top0/reorder/D" type="array">
+      <obj_property name="ElementShortName">D[15:0]</obj_property>
+      <obj_property name="ObjectShortName">D[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/top0/reorder/\sr_out_reg[1][21] " type="array">
+      <obj_property name="ElementShortName">\sr_out_reg[1][21] [15:0]</obj_property>
+      <obj_property name="ObjectShortName">\sr_out_reg[1][21] [15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/top0/reorder/outReal_OBUF" type="array">
+      <obj_property name="ElementShortName">outReal_OBUF[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outReal_OBUF[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Top_FFT/top0/reorder/outImag_OBUF" type="array">
+      <obj_property name="ElementShortName">outImag_OBUF[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outImag_OBUF[15:0]</obj_property>
+   </wvobject>
+</wave_config>

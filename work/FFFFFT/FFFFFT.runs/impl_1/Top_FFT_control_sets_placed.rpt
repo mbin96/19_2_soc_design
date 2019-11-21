@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date         : Mon Nov 18 14:23:45 2019
+| Date         : Wed Nov 20 16:59:01 2019
 | Host         : DESKTOP-KDNOE8T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_FFT_control_sets_placed.rpt
 | Design       : Top_FFT
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    13 |
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    17 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,33 +33,37 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |               1 |            1 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             192 |           50 |
+| Yes          | No                    | No                     |             192 |           56 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             499 |          170 |
+| Yes          | Yes                   | No                     |            4630 |         1245 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+---------------------+------------------+----------------+
-|  Clock Signal  | Enable Signal |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
-+----------------+---------------+---------------------+------------------+----------------+
-|  clk_IBUF_BUFG | valid_IBUF    | cnt0/cnt[5]_i_1_n_0 |                5 |              8 |
-|  clk_IBUF_BUFG | stage6/sr_out |                     |               11 |             44 |
-|  clk_IBUF_BUFG | valid_IBUF    |                     |               78 |            296 |
-|  clk_IBUF_BUFG | valid_IBUF    | stage5/sr0/SR[0]    |              165 |            491 |
-+----------------+---------------+---------------------+------------------+----------------+
++----------------+-------------------+---------------------+------------------+----------------+
+|  Clock Signal  |   Enable Signal   |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+-------------------+---------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                   |                     |                1 |              1 |
+|  clk_IBUF_BUFG | valid_IBUF        | cnt0/cnt[5]_i_1_n_0 |                4 |              8 |
+|  clk_IBUF_BUFG | stage6/sr_out     |                     |               17 |             44 |
+|  clk_IBUF_BUFG | valid_IBUF        |                     |               78 |            296 |
+|  clk_IBUF_BUFG | valid_IBUF        | reorder/rr10/SR[0]  |              172 |            526 |
+|  clk_IBUF_BUFG | reorder/rr01/E[0] | reorder/rr10/SR[0]  |              532 |           2048 |
+|  clk_IBUF_BUFG | reorder/rr10/E[0] | reorder/rr10/SR[0]  |              537 |           2048 |
++----------------+-------------------+---------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
+| 1      |                     1 |
 | 8      |                     1 |
-| 16+    |                     3 |
+| 16+    |                     5 |
 +--------+-----------------------+
 
 

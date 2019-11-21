@@ -33,6 +33,8 @@ read_verilog -library xil_defaultlib {
   C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v
   C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Counter.v
   C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/MULT.v
+  C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reorder_Reg.v
+  C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reordering.v
   C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v
   C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage.v
   C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage6.v

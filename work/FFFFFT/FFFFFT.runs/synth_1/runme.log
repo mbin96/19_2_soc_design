@@ -10,15 +10,15 @@
 
 Sourcing tcl script 'C:/Users/mbin9/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source Top_FFT.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 335.996 ; gain = 110.594
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 333.645 ; gain = 107.625
 Command: synth_design -top Top_FFT -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27568 
+INFO: Helper process launched with PID 23716 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 441.367 ; gain = 93.711
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 440.512 ; gain = 95.258
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Top_FFT' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:34]
 	Parameter in_BW bound to: 16 - type: integer 
@@ -428,7 +428,24 @@ INFO: [Synth 8-638] synthesizing module 'BF__parameterized4' [C:/Users/mbin9/Doc
 	Parameter BW bound to: 22 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'BF__parameterized4' (5#1) [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/BF.v:34]
 INFO: [Synth 8-256] done synthesizing module 'Stage6' (6#1) [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Stage6.v:34]
-INFO: [Synth 8-256] done synthesizing module 'Top_FFT' (7#1) [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:34]
+INFO: [Synth 8-638] synthesizing module 'Reordering' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reordering.v:1]
+	Parameter BW bound to: 16 - type: integer 
+	Parameter N bound to: 64 - type: integer 
+	Parameter Delay bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Shift_Reg__parameterized4' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v:34]
+	Parameter BW bound to: 6 - type: integer 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Shift_Reg__parameterized4' (6#1) [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Shift_Reg.v:34]
+INFO: [Synth 8-638] synthesizing module 'Reorder_Reg' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reorder_Reg.v:1]
+	Parameter BW bound to: 16 - type: integer 
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Reorder_Reg' (7#1) [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reorder_Reg.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Reordering' (8#1) [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Reordering.v:1]
+WARNING: [Synth 8-689] width (17) of port connection 'inReal' does not match port width (16) of module 'Reordering' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:71]
+WARNING: [Synth 8-689] width (17) of port connection 'inImag' does not match port width (16) of module 'Reordering' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:71]
+WARNING: [Synth 8-689] width (17) of port connection 'outReal' does not match port width (16) of module 'Reordering' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:71]
+WARNING: [Synth 8-689] width (17) of port connection 'outImag' does not match port width (16) of module 'Reordering' [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:71]
+INFO: [Synth 8-256] done synthesizing module 'Top_FFT' (9#1) [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Top_FFT.v:34]
 WARNING: [Synth 8-3331] design MULT__parameterized3 has unconnected port cnt[4]
 WARNING: [Synth 8-3331] design MULT__parameterized3 has unconnected port cnt[3]
 WARNING: [Synth 8-3331] design MULT__parameterized3 has unconnected port cnt[2]
@@ -445,7 +462,7 @@ WARNING: [Synth 8-3331] design MULT__parameterized0 has unconnected port cnt[4]
 WARNING: [Synth 8-3331] design Stage__parameterized0 has unconnected port cnt[5]
 WARNING: [Synth 8-3331] design Stage has unconnected port cnt[5]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 493.461 ; gain = 145.805
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 494.371 ; gain = 149.117
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -455,7 +472,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 493.461 ; gain = 145.805
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 494.371 ; gain = 149.117
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -469,26 +486,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 856.406 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 879.109 ; gain = 2.406
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 856.406 ; gain = 508.750
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 879.109 ; gain = 533.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 856.406 ; gain = 508.750
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 879.109 ; gain = 533.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 856.406 ; gain = 508.750
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 879.109 ; gain = 533.855
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.srcs/sources_1/imports/Lab_SD2019_2_prob/Counter.v:42]
+INFO: [Synth 8-5546] ROM "regOutFlag" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 856.406 ; gain = 508.750
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 879.109 ; gain = 533.855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -521,11 +539,11 @@ Detailed RTL Component Info :
 	               19 Bit    Registers := 18    
 	               18 Bit    Registers := 34    
 	               17 Bit    Registers := 66    
-	               16 Bit    Registers := 2     
-	                6 Bit    Registers := 1     
+	               16 Bit    Registers := 258   
+	                6 Bit    Registers := 8     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     22 Bit        Muxes := 4     
 	   2 Input     21 Bit        Muxes := 6     
@@ -533,12 +551,13 @@ Detailed RTL Component Info :
 	   2 Input     19 Bit        Muxes := 6     
 	   2 Input     18 Bit        Muxes := 6     
 	   2 Input     17 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 6     
 	   8 Input     12 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
 	   8 Input     11 Bit        Muxes := 1     
 	   4 Input     11 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -661,6 +680,24 @@ Detailed RTL Component Info :
 	               21 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     22 Bit        Muxes := 4     
+Module Shift_Reg__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 3     
+Module Reorder_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 64    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Reordering 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -727,8 +764,26 @@ DSP Report: operator stage5/mult0/buf_im0 is absorbed into DSP stage5/mult0/buf_
 DSP Report: Generating DSP stage5/mult0/buf_im, operation Mode is: PCIN+A*B.
 DSP Report: operator stage5/mult0/buf_im is absorbed into DSP stage5/mult0/buf_im.
 DSP Report: operator stage5/mult0/buf_im0 is absorbed into DSP stage5/mult0/buf_im.
+INFO: [Synth 8-3886] merging instance 'reorder/rr01/revCnt_reg[0]' (FDRE) to 'reorder/rr11/revCnt_reg[0]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr01/revCnt_reg[1]' (FDRE) to 'reorder/rr11/revCnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr01/revCnt_reg[2]' (FDRE) to 'reorder/rr11/revCnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr01/revCnt_reg[3]' (FDRE) to 'reorder/rr11/revCnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr01/revCnt_reg[4]' (FDRE) to 'reorder/rr11/revCnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr01/revCnt_reg[5]' (FDRE) to 'reorder/rr11/revCnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr11/revCnt_reg[0]' (FDRE) to 'reorder/rr00/revCnt_reg[0]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr11/revCnt_reg[1]' (FDRE) to 'reorder/rr00/revCnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr11/revCnt_reg[2]' (FDRE) to 'reorder/rr00/revCnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr11/revCnt_reg[3]' (FDRE) to 'reorder/rr00/revCnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr11/revCnt_reg[4]' (FDRE) to 'reorder/rr00/revCnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr11/revCnt_reg[5]' (FDRE) to 'reorder/rr00/revCnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr00/revCnt_reg[0]' (FDRE) to 'reorder/rr10/revCnt_reg[0]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr00/revCnt_reg[1]' (FDRE) to 'reorder/rr10/revCnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr00/revCnt_reg[2]' (FDRE) to 'reorder/rr10/revCnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr00/revCnt_reg[3]' (FDRE) to 'reorder/rr10/revCnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr00/revCnt_reg[4]' (FDRE) to 'reorder/rr10/revCnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'reorder/rr00/revCnt_reg[5]' (FDRE) to 'reorder/rr10/revCnt_reg[5]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 856.406 ; gain = 508.750
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 879.109 ; gain = 533.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -785,13 +840,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 898.805 ; gain = 551.148
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 921.160 ; gain = 575.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 901.355 ; gain = 553.699
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 948.922 ; gain = 603.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -802,8 +857,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'en_s2_reg' (FDRE) to 'reorder/sr0/sr_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'en_s3_reg[0]' (FDRE) to 'reorder/sr0/sr_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'en_s3_reg[1]' (FDRE) to 'reorder/sr0/sr_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'en_s4_reg[0]' (FDRE) to 'reorder/sr0/sr_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'en_s4_reg[1]' (FDRE) to 'reorder/sr0/sr_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'en_s4_reg[2]' (FDRE) to 'reorder/sr0/sr_reg[2][2]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -827,7 +888,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -840,7 +901,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -852,25 +913,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -911,61 +972,68 @@ Report Cell Usage:
 |2     |CARRY4  |   180|
 |3     |DSP48E1 |    20|
 |4     |LUT1    |    14|
-|5     |LUT2    |   782|
+|5     |LUT2    |   784|
 |6     |LUT3    |   471|
-|7     |LUT4    |   212|
+|7     |LUT4    |   213|
 |8     |LUT5    |    24|
-|9     |LUT6    |     1|
-|10    |SRL16E  |   114|
-|11    |SRLC32E |    34|
-|12    |FDRE    |   683|
-|13    |FDSE    |     8|
-|14    |IBUF    |    36|
-|15    |OBUF    |    32|
+|9     |LUT6    |  1186|
+|10    |MUXF7   |   512|
+|11    |SRL16E  |   114|
+|12    |SRLC32E |    34|
+|13    |FDRE    |  4815|
+|14    |FDSE    |     8|
+|15    |IBUF    |    36|
+|16    |OBUF    |    32|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+----------+----------------------------+------+
 |      |Instance  |Module                      |Cells |
 +------+----------+----------------------------+------+
-|1     |top       |                            |  2612|
+|1     |top       |                            |  8444|
 |2     |  cnt0    |Counter                     |    49|
-|3     |  stage1  |Stage                       |   433|
-|4     |    bf0   |BF                          |    18|
-|5     |    mult0 |MULT                        |    48|
-|6     |    sr0   |Shift_Reg                   |   102|
-|7     |    sr1   |Shift_Reg_4                 |   133|
-|8     |  stage2  |Stage__parameterized0       |   446|
-|9     |    bf0   |BF__parameterized0          |    20|
-|10    |    mult0 |MULT__parameterized0        |    72|
-|11    |    sr0   |Shift_Reg__parameterized0   |   107|
-|12    |    sr1   |Shift_Reg__parameterized0_3 |   107|
-|13    |  stage3  |Stage__parameterized1       |   455|
-|14    |    bf0   |BF__parameterized1          |    20|
-|15    |    mult0 |MULT__parameterized1        |    61|
-|16    |    sr0   |Shift_Reg__parameterized1   |   113|
-|17    |    sr1   |Shift_Reg__parameterized1_2 |   113|
-|18    |  stage4  |Stage__parameterized2       |   468|
-|19    |    bf0   |BF__parameterized2          |    20|
-|20    |    mult0 |MULT__parameterized2        |    54|
-|21    |    sr0   |Shift_Reg__parameterized2   |   119|
-|22    |    sr1   |Shift_Reg__parameterized2_1 |   119|
-|23    |  stage5  |Stage__parameterized3       |   413|
-|24    |    bf0   |BF__parameterized3          |    22|
-|25    |    mult0 |MULT__parameterized3        |    58|
-|26    |    sr0   |Shift_Reg__parameterized3   |    85|
-|27    |    sr1   |Shift_Reg__parameterized3_0 |    84|
-|28    |  stage6  |Stage6                      |   273|
-|29    |    bf0   |BF__parameterized4          |    24|
+|3     |  reorder |Reordering                  |  5839|
+|4     |    rr00  |Reorder_Reg                 |  1440|
+|5     |    rr01  |Reorder_Reg_5               |  1457|
+|6     |    rr10  |Reorder_Reg_6               |  1481|
+|7     |    rr11  |Reorder_Reg_7               |  1440|
+|8     |    sr0   |Shift_Reg__parameterized4   |    20|
+|9     |  stage1  |Stage                       |   433|
+|10    |    bf0   |BF                          |    18|
+|11    |    mult0 |MULT                        |    48|
+|12    |    sr0   |Shift_Reg                   |   102|
+|13    |    sr1   |Shift_Reg_4                 |   133|
+|14    |  stage2  |Stage__parameterized0       |   446|
+|15    |    bf0   |BF__parameterized0          |    20|
+|16    |    mult0 |MULT__parameterized0        |    72|
+|17    |    sr0   |Shift_Reg__parameterized0   |   107|
+|18    |    sr1   |Shift_Reg__parameterized0_3 |   107|
+|19    |  stage3  |Stage__parameterized1       |   455|
+|20    |    bf0   |BF__parameterized1          |    20|
+|21    |    mult0 |MULT__parameterized1        |    61|
+|22    |    sr0   |Shift_Reg__parameterized1   |   113|
+|23    |    sr1   |Shift_Reg__parameterized1_2 |   113|
+|24    |  stage4  |Stage__parameterized2       |   468|
+|25    |    bf0   |BF__parameterized2          |    20|
+|26    |    mult0 |MULT__parameterized2        |    54|
+|27    |    sr0   |Shift_Reg__parameterized2   |   119|
+|28    |    sr1   |Shift_Reg__parameterized2_1 |   119|
+|29    |  stage5  |Stage__parameterized3       |   412|
+|30    |    bf0   |BF__parameterized3          |    22|
+|31    |    mult0 |MULT__parameterized3        |    58|
+|32    |    sr0   |Shift_Reg__parameterized3   |    84|
+|33    |    sr1   |Shift_Reg__parameterized3_0 |    84|
+|34    |  stage6  |Stage6                      |   273|
+|35    |    bf0   |BF__parameterized4          |    24|
 +------+----------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 917.605 ; gain = 569.949
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 985.809 ; gain = 640.555
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 917.605 ; gain = 207.004
-Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 917.605 ; gain = 569.949
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 985.809 ; gain = 255.816
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 985.809 ; gain = 640.555
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 236 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 748 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -973,10 +1041,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+90 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 917.605 ; gain = 581.609
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 985.809 ; gain = 652.164
 INFO: [Common 17-1381] The checkpoint 'C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFFFFT/FFFFFT.runs/synth_1/Top_FFT.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_FFT_utilization_synth.rpt -pb Top_FFT_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 917.605 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 13:04:14 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 985.809 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 16:18:28 2019...

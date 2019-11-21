@@ -22,8 +22,15 @@ Compiling module simprims_ver.LUT5
 Compiling module simprims_ver.LUT6
 Compiling module simprims_ver.FDSE_default
 Compiling module xil_defaultlib.Counter
-Compiling module simprims_ver.FDRE_default
 Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.Reorder_Reg
+Compiling module xil_defaultlib.Reorder_Reg_5
+Compiling module xil_defaultlib.Reorder_Reg_6
+Compiling module xil_defaultlib.Reorder_Reg_7
+Compiling module xil_defaultlib.Shift_Reg__parameterized4
+Compiling module xil_defaultlib.Reordering
 Compiling module simprims_ver.CARRY4
 Compiling module xil_defaultlib.BF
 Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
