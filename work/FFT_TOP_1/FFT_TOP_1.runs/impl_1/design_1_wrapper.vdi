@@ -1,0 +1,566 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Fri Nov 22 20:21:48 2019
+# Process ID: 37900
+# Current directory: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/mbin9/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 234.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 669 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Parsing XDC File [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/.Xil/Vivado-37900-DESKTOP-KDNOE8T/dcp1/design_1_wrapper_board.xdc]
+Finished Parsing XDC File [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/.Xil/Vivado-37900-DESKTOP-KDNOE8T/dcp1/design_1_wrapper_board.xdc]
+Parsing XDC File [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/.Xil/Vivado-37900-DESKTOP-KDNOE8T/dcp1/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/.Xil/Vivado-37900-DESKTOP-KDNOE8T/dcp1/design_1_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.256 . Memory (MB): peak = 1298.285 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.256 . Memory (MB): peak = 1298.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 234 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 228 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4.1 (64-bit) build 2117270
+open_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1298.285 ; gain = 1072.270
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.781 . Memory (MB): peak = 1303.875 ; gain = 5.402
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-318] Generating core instance : dbg_hub
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/IP_FFT_ex1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Netlist 29-17] Analyzing 448 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1330.379 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: e7097cec
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:02:16 . Memory (MB): peak = 1330.695 ; gain = 26.820
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 6 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 116b8dd41
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:02:17 . Memory (MB): peak = 1330.695 ; gain = 26.820
+INFO: [Opt 31-389] Phase Retarget created 8 cells and removed 41 cells
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 1b380f5b7
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:02:17 . Memory (MB): peak = 1330.695 ; gain = 26.820
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 16 cells
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: e391b2da
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:02:18 . Memory (MB): peak = 1330.695 ; gain = 26.820
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 151 cells
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: e391b2da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:02:19 . Memory (MB): peak = 1330.695 ; gain = 26.820
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: e391b2da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:02:19 . Memory (MB): peak = 1330.695 ; gain = 26.820
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1330.695 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 11a9d1372
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:02:19 . Memory (MB): peak = 1330.695 ; gain = 26.820
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=7.630 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 7 newly gated: 0 Total Ports: 14
+Ending PowerOpt Patch Enables Task | Checksum: 2067075c7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 2067075c7
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1538.793 ; gain = 208.098
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:02:27 . Memory (MB): peak = 1538.793 ; gain = 240.508
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1538.793 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 141fb728e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1538.793 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8a82bf30
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 164d2ae73
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 164d2ae73
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 164d2ae73
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1dce67075
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1dce67075
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13d1b6d82
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 152f528ed
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 73a2954b
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1937ac5dc
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 217510a5e
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 217510a5e
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 217510a5e
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19717f7a1
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19717f7a1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=5.202. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2505635b1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 2505635b1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2505635b1
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 2505635b1
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 21be561c3
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 21be561c3
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Ending Placer Task | Checksum: 12b27f926
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1538.793 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1538.793 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1538.793 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 1538.793 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: c46b05c8 ConstDB: 0 ShapeSum: 66bcf35e RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 165c977d1
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 1538.793 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 67934019 NumContArr: fe3637b8 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 165c977d1
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 165c977d1
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 1538.793 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 165c977d1
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 1538.793 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 210695108
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 1546.051 ; gain = 7.258
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.276  | TNS=0.000  | WHS=-0.211 | THS=-173.565|
+
+Phase 2 Router Initialization | Checksum: 1a5927d2c
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 170e6a567
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 586
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.138  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1d19dcdbe
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:42 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.138  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: ffb4d186
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+Phase 4 Rip-up And Reroute | Checksum: ffb4d186
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: ffb4d186
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: ffb4d186
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+Phase 5 Delay and Skew Optimization | Checksum: ffb4d186
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 15c497eb0
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.152  | TNS=0.000  | WHS=0.040  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 144f3f2da
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+Phase 6 Post Hold Fix | Checksum: 144f3f2da
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.34524 %
+  Global Horizontal Routing Utilization  = 1.7527 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 106ad79b0
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 106ad79b0
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c49c0327
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:44 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.152  | TNS=0.000  | WHS=0.040  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: c49c0327
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:44 . Memory (MB): peak = 1617.301 ; gain = 78.508
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:44 . Memory (MB): peak = 1617.301 ; gain = 78.508
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+77 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:01 ; elapsed = 00:00:47 . Memory (MB): peak = 1617.301 ; gain = 78.508
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1617.301 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1617.301 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFT_TOP_1/FFT_TOP_1.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1617.301 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+89 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re0 input design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re output design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_im/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage1/mult0/buf_re/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_im/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage2/mult0/buf_re/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_im/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage3/mult0/buf_re/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_im/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage4/mult0/buf_re/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_im/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re multiplier stage design_1_i/axi_slave_FFT_f_ps_0/inst/inst_FFT/stage5/mult0/buf_re/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC RTSTAT-10] No routable loads: 21 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15], design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[16]... and (the first 15 of 19 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 61 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+106 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2059.766 ; gain = 442.465
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 22 20:27:06 2019...
