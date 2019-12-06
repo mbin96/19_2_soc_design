@@ -1,0 +1,991 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Wed Nov 27 13:40:53 2019
+# Process ID: 22412
+# Current directory: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.runs/design_1_axis_fft_0_0_synth_1
+# Command line: vivado.exe -log design_1_axis_fft_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axis_fft_0_0.tcl
+# Log file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.runs/design_1_axis_fft_0_0_synth_1/design_1_axis_fft_0_0.vds
+# Journal file: C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.runs/design_1_axis_fft_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/mbin9/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source design_1_axis_fft_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 335.805 ; gain = 110.145
+Command: synth_design -top design_1_axis_fft_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25040 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 455.695 ; gain = 96.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_fft_0_0' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ip/design_1_axis_fft_0_0/synth/design_1_axis_fft_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'axis_fft' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/axis_fft.v:35]
+INFO: [Synth 8-638] synthesizing module 'Top_FFT' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Top_FFT.v:35]
+	Parameter in_BW bound to: 16 - type: integer 
+	Parameter out_BW bound to: 22 - type: integer 
+	Parameter cut_BW bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Counter' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Counter.v:34]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (1#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Counter.v:34]
+INFO: [Synth 8-638] synthesizing module 'Stage' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+	Parameter BW bound to: 17 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Shift_Reg' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+	Parameter BW bound to: 17 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Shift_Reg' (2#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+INFO: [Synth 8-638] synthesizing module 'BF' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+	Parameter BW bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BF' (3#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+INFO: [Synth 8-638] synthesizing module 'MULT' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+	Parameter BW bound to: 17 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter W_re0 bound to: 12'sb010000000000 
+	Parameter W_re1 bound to: 12'sb001111111011 
+	Parameter W_re2 bound to: 12'sb001111101100 
+	Parameter W_re3 bound to: 12'sb001111010011 
+	Parameter W_re4 bound to: 12'sb001110110010 
+	Parameter W_re5 bound to: 12'sb001110000111 
+	Parameter W_re6 bound to: 12'sb001101010011 
+	Parameter W_re7 bound to: 12'sb001100010111 
+	Parameter W_re8 bound to: 12'sb001011010100 
+	Parameter W_re9 bound to: 12'sb001010001001 
+	Parameter W_re10 bound to: 12'sb001000111000 
+	Parameter W_re11 bound to: 12'sb000111100010 
+	Parameter W_re12 bound to: 12'sb000110000111 
+	Parameter W_re13 bound to: 12'sb000100101001 
+	Parameter W_re14 bound to: 12'sb000011000111 
+	Parameter W_re15 bound to: 12'sb000001100100 
+	Parameter W_re16 bound to: 12'sb000000000000 
+	Parameter W_re17 bound to: 12'sb111110011011 
+	Parameter W_re18 bound to: 12'sb111100111000 
+	Parameter W_re19 bound to: 12'sb111011010110 
+	Parameter W_re20 bound to: 12'sb111001111000 
+	Parameter W_re21 bound to: 12'sb111000011101 
+	Parameter W_re22 bound to: 12'sb110111000111 
+	Parameter W_re23 bound to: 12'sb110101110110 
+	Parameter W_re24 bound to: 12'sb110100101011 
+	Parameter W_re25 bound to: 12'sb110011101000 
+	Parameter W_re26 bound to: 12'sb110010101100 
+	Parameter W_re27 bound to: 12'sb110001111000 
+	Parameter W_re28 bound to: 12'sb110001001101 
+	Parameter W_re29 bound to: 12'sb110000101100 
+	Parameter W_re30 bound to: 12'sb110000010011 
+	Parameter W_re31 bound to: 12'sb110000000100 
+	Parameter W_im0 bound to: 12'sb000000000000 
+	Parameter W_im1 bound to: 12'sb111110011011 
+	Parameter W_im2 bound to: 12'sb111100111000 
+	Parameter W_im3 bound to: 12'sb111011010110 
+	Parameter W_im4 bound to: 12'sb111001111000 
+	Parameter W_im5 bound to: 12'sb111000011101 
+	Parameter W_im6 bound to: 12'sb110111000111 
+	Parameter W_im7 bound to: 12'sb110101110110 
+	Parameter W_im8 bound to: 12'sb110100101011 
+	Parameter W_im9 bound to: 12'sb110011101000 
+	Parameter W_im10 bound to: 12'sb110010101100 
+	Parameter W_im11 bound to: 12'sb110001111000 
+	Parameter W_im12 bound to: 12'sb110001001101 
+	Parameter W_im13 bound to: 12'sb110000101100 
+	Parameter W_im14 bound to: 12'sb110000010011 
+	Parameter W_im15 bound to: 12'sb110000000100 
+	Parameter W_im16 bound to: 12'sb110000000000 
+	Parameter W_im17 bound to: 12'sb110000000100 
+	Parameter W_im18 bound to: 12'sb110000010011 
+	Parameter W_im19 bound to: 12'sb110000101100 
+	Parameter W_im20 bound to: 12'sb110001001101 
+	Parameter W_im21 bound to: 12'sb110001111000 
+	Parameter W_im22 bound to: 12'sb110010101100 
+	Parameter W_im23 bound to: 12'sb110011101000 
+	Parameter W_im24 bound to: 12'sb110100101011 
+	Parameter W_im25 bound to: 12'sb110101110110 
+	Parameter W_im26 bound to: 12'sb110111000111 
+	Parameter W_im27 bound to: 12'sb111000011101 
+	Parameter W_im28 bound to: 12'sb111001111000 
+	Parameter W_im29 bound to: 12'sb111011010110 
+	Parameter W_im30 bound to: 12'sb111100111000 
+	Parameter W_im31 bound to: 12'sb111110011011 
+INFO: [Synth 8-256] done synthesizing module 'MULT' (4#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+INFO: [Synth 8-256] done synthesizing module 'Stage' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+INFO: [Synth 8-638] synthesizing module 'Stage__parameterized0' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+	Parameter BW bound to: 18 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Shift_Reg__parameterized0' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+	Parameter BW bound to: 18 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Shift_Reg__parameterized0' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+INFO: [Synth 8-638] synthesizing module 'BF__parameterized0' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+	Parameter BW bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BF__parameterized0' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+INFO: [Synth 8-638] synthesizing module 'MULT__parameterized0' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+	Parameter BW bound to: 18 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+	Parameter W_re0 bound to: 12'sb010000000000 
+	Parameter W_re1 bound to: 12'sb001111111011 
+	Parameter W_re2 bound to: 12'sb001111101100 
+	Parameter W_re3 bound to: 12'sb001111010011 
+	Parameter W_re4 bound to: 12'sb001110110010 
+	Parameter W_re5 bound to: 12'sb001110000111 
+	Parameter W_re6 bound to: 12'sb001101010011 
+	Parameter W_re7 bound to: 12'sb001100010111 
+	Parameter W_re8 bound to: 12'sb001011010100 
+	Parameter W_re9 bound to: 12'sb001010001001 
+	Parameter W_re10 bound to: 12'sb001000111000 
+	Parameter W_re11 bound to: 12'sb000111100010 
+	Parameter W_re12 bound to: 12'sb000110000111 
+	Parameter W_re13 bound to: 12'sb000100101001 
+	Parameter W_re14 bound to: 12'sb000011000111 
+	Parameter W_re15 bound to: 12'sb000001100100 
+	Parameter W_re16 bound to: 12'sb000000000000 
+	Parameter W_re17 bound to: 12'sb111110011011 
+	Parameter W_re18 bound to: 12'sb111100111000 
+	Parameter W_re19 bound to: 12'sb111011010110 
+	Parameter W_re20 bound to: 12'sb111001111000 
+	Parameter W_re21 bound to: 12'sb111000011101 
+	Parameter W_re22 bound to: 12'sb110111000111 
+	Parameter W_re23 bound to: 12'sb110101110110 
+	Parameter W_re24 bound to: 12'sb110100101011 
+	Parameter W_re25 bound to: 12'sb110011101000 
+	Parameter W_re26 bound to: 12'sb110010101100 
+	Parameter W_re27 bound to: 12'sb110001111000 
+	Parameter W_re28 bound to: 12'sb110001001101 
+	Parameter W_re29 bound to: 12'sb110000101100 
+	Parameter W_re30 bound to: 12'sb110000010011 
+	Parameter W_re31 bound to: 12'sb110000000100 
+	Parameter W_im0 bound to: 12'sb000000000000 
+	Parameter W_im1 bound to: 12'sb111110011011 
+	Parameter W_im2 bound to: 12'sb111100111000 
+	Parameter W_im3 bound to: 12'sb111011010110 
+	Parameter W_im4 bound to: 12'sb111001111000 
+	Parameter W_im5 bound to: 12'sb111000011101 
+	Parameter W_im6 bound to: 12'sb110111000111 
+	Parameter W_im7 bound to: 12'sb110101110110 
+	Parameter W_im8 bound to: 12'sb110100101011 
+	Parameter W_im9 bound to: 12'sb110011101000 
+	Parameter W_im10 bound to: 12'sb110010101100 
+	Parameter W_im11 bound to: 12'sb110001111000 
+	Parameter W_im12 bound to: 12'sb110001001101 
+	Parameter W_im13 bound to: 12'sb110000101100 
+	Parameter W_im14 bound to: 12'sb110000010011 
+	Parameter W_im15 bound to: 12'sb110000000100 
+	Parameter W_im16 bound to: 12'sb110000000000 
+	Parameter W_im17 bound to: 12'sb110000000100 
+	Parameter W_im18 bound to: 12'sb110000010011 
+	Parameter W_im19 bound to: 12'sb110000101100 
+	Parameter W_im20 bound to: 12'sb110001001101 
+	Parameter W_im21 bound to: 12'sb110001111000 
+	Parameter W_im22 bound to: 12'sb110010101100 
+	Parameter W_im23 bound to: 12'sb110011101000 
+	Parameter W_im24 bound to: 12'sb110100101011 
+	Parameter W_im25 bound to: 12'sb110101110110 
+	Parameter W_im26 bound to: 12'sb110111000111 
+	Parameter W_im27 bound to: 12'sb111000011101 
+	Parameter W_im28 bound to: 12'sb111001111000 
+	Parameter W_im29 bound to: 12'sb111011010110 
+	Parameter W_im30 bound to: 12'sb111100111000 
+	Parameter W_im31 bound to: 12'sb111110011011 
+INFO: [Synth 8-256] done synthesizing module 'MULT__parameterized0' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+INFO: [Synth 8-256] done synthesizing module 'Stage__parameterized0' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+INFO: [Synth 8-638] synthesizing module 'Stage__parameterized1' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+	Parameter BW bound to: 19 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Shift_Reg__parameterized1' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+	Parameter BW bound to: 19 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Shift_Reg__parameterized1' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+INFO: [Synth 8-638] synthesizing module 'BF__parameterized1' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+	Parameter BW bound to: 19 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BF__parameterized1' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+INFO: [Synth 8-638] synthesizing module 'MULT__parameterized1' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+	Parameter BW bound to: 19 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+	Parameter W_re0 bound to: 12'sb010000000000 
+	Parameter W_re1 bound to: 12'sb001111111011 
+	Parameter W_re2 bound to: 12'sb001111101100 
+	Parameter W_re3 bound to: 12'sb001111010011 
+	Parameter W_re4 bound to: 12'sb001110110010 
+	Parameter W_re5 bound to: 12'sb001110000111 
+	Parameter W_re6 bound to: 12'sb001101010011 
+	Parameter W_re7 bound to: 12'sb001100010111 
+	Parameter W_re8 bound to: 12'sb001011010100 
+	Parameter W_re9 bound to: 12'sb001010001001 
+	Parameter W_re10 bound to: 12'sb001000111000 
+	Parameter W_re11 bound to: 12'sb000111100010 
+	Parameter W_re12 bound to: 12'sb000110000111 
+	Parameter W_re13 bound to: 12'sb000100101001 
+	Parameter W_re14 bound to: 12'sb000011000111 
+	Parameter W_re15 bound to: 12'sb000001100100 
+	Parameter W_re16 bound to: 12'sb000000000000 
+	Parameter W_re17 bound to: 12'sb111110011011 
+	Parameter W_re18 bound to: 12'sb111100111000 
+	Parameter W_re19 bound to: 12'sb111011010110 
+	Parameter W_re20 bound to: 12'sb111001111000 
+	Parameter W_re21 bound to: 12'sb111000011101 
+	Parameter W_re22 bound to: 12'sb110111000111 
+	Parameter W_re23 bound to: 12'sb110101110110 
+	Parameter W_re24 bound to: 12'sb110100101011 
+	Parameter W_re25 bound to: 12'sb110011101000 
+	Parameter W_re26 bound to: 12'sb110010101100 
+	Parameter W_re27 bound to: 12'sb110001111000 
+	Parameter W_re28 bound to: 12'sb110001001101 
+	Parameter W_re29 bound to: 12'sb110000101100 
+	Parameter W_re30 bound to: 12'sb110000010011 
+	Parameter W_re31 bound to: 12'sb110000000100 
+	Parameter W_im0 bound to: 12'sb000000000000 
+	Parameter W_im1 bound to: 12'sb111110011011 
+	Parameter W_im2 bound to: 12'sb111100111000 
+	Parameter W_im3 bound to: 12'sb111011010110 
+	Parameter W_im4 bound to: 12'sb111001111000 
+	Parameter W_im5 bound to: 12'sb111000011101 
+	Parameter W_im6 bound to: 12'sb110111000111 
+	Parameter W_im7 bound to: 12'sb110101110110 
+	Parameter W_im8 bound to: 12'sb110100101011 
+	Parameter W_im9 bound to: 12'sb110011101000 
+	Parameter W_im10 bound to: 12'sb110010101100 
+	Parameter W_im11 bound to: 12'sb110001111000 
+	Parameter W_im12 bound to: 12'sb110001001101 
+	Parameter W_im13 bound to: 12'sb110000101100 
+	Parameter W_im14 bound to: 12'sb110000010011 
+	Parameter W_im15 bound to: 12'sb110000000100 
+	Parameter W_im16 bound to: 12'sb110000000000 
+	Parameter W_im17 bound to: 12'sb110000000100 
+	Parameter W_im18 bound to: 12'sb110000010011 
+	Parameter W_im19 bound to: 12'sb110000101100 
+	Parameter W_im20 bound to: 12'sb110001001101 
+	Parameter W_im21 bound to: 12'sb110001111000 
+	Parameter W_im22 bound to: 12'sb110010101100 
+	Parameter W_im23 bound to: 12'sb110011101000 
+	Parameter W_im24 bound to: 12'sb110100101011 
+	Parameter W_im25 bound to: 12'sb110101110110 
+	Parameter W_im26 bound to: 12'sb110111000111 
+	Parameter W_im27 bound to: 12'sb111000011101 
+	Parameter W_im28 bound to: 12'sb111001111000 
+	Parameter W_im29 bound to: 12'sb111011010110 
+	Parameter W_im30 bound to: 12'sb111100111000 
+	Parameter W_im31 bound to: 12'sb111110011011 
+INFO: [Synth 8-256] done synthesizing module 'MULT__parameterized1' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+INFO: [Synth 8-256] done synthesizing module 'Stage__parameterized1' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+INFO: [Synth 8-638] synthesizing module 'Stage__parameterized2' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+	Parameter BW bound to: 20 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Shift_Reg__parameterized2' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+	Parameter BW bound to: 20 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Shift_Reg__parameterized2' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+INFO: [Synth 8-638] synthesizing module 'BF__parameterized2' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+	Parameter BW bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BF__parameterized2' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+INFO: [Synth 8-638] synthesizing module 'MULT__parameterized2' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+	Parameter BW bound to: 20 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter W_re0 bound to: 12'sb010000000000 
+	Parameter W_re1 bound to: 12'sb001111111011 
+	Parameter W_re2 bound to: 12'sb001111101100 
+	Parameter W_re3 bound to: 12'sb001111010011 
+	Parameter W_re4 bound to: 12'sb001110110010 
+	Parameter W_re5 bound to: 12'sb001110000111 
+	Parameter W_re6 bound to: 12'sb001101010011 
+	Parameter W_re7 bound to: 12'sb001100010111 
+	Parameter W_re8 bound to: 12'sb001011010100 
+	Parameter W_re9 bound to: 12'sb001010001001 
+	Parameter W_re10 bound to: 12'sb001000111000 
+	Parameter W_re11 bound to: 12'sb000111100010 
+	Parameter W_re12 bound to: 12'sb000110000111 
+	Parameter W_re13 bound to: 12'sb000100101001 
+	Parameter W_re14 bound to: 12'sb000011000111 
+	Parameter W_re15 bound to: 12'sb000001100100 
+	Parameter W_re16 bound to: 12'sb000000000000 
+	Parameter W_re17 bound to: 12'sb111110011011 
+	Parameter W_re18 bound to: 12'sb111100111000 
+	Parameter W_re19 bound to: 12'sb111011010110 
+	Parameter W_re20 bound to: 12'sb111001111000 
+	Parameter W_re21 bound to: 12'sb111000011101 
+	Parameter W_re22 bound to: 12'sb110111000111 
+	Parameter W_re23 bound to: 12'sb110101110110 
+	Parameter W_re24 bound to: 12'sb110100101011 
+	Parameter W_re25 bound to: 12'sb110011101000 
+	Parameter W_re26 bound to: 12'sb110010101100 
+	Parameter W_re27 bound to: 12'sb110001111000 
+	Parameter W_re28 bound to: 12'sb110001001101 
+	Parameter W_re29 bound to: 12'sb110000101100 
+	Parameter W_re30 bound to: 12'sb110000010011 
+	Parameter W_re31 bound to: 12'sb110000000100 
+	Parameter W_im0 bound to: 12'sb000000000000 
+	Parameter W_im1 bound to: 12'sb111110011011 
+	Parameter W_im2 bound to: 12'sb111100111000 
+	Parameter W_im3 bound to: 12'sb111011010110 
+	Parameter W_im4 bound to: 12'sb111001111000 
+	Parameter W_im5 bound to: 12'sb111000011101 
+	Parameter W_im6 bound to: 12'sb110111000111 
+	Parameter W_im7 bound to: 12'sb110101110110 
+	Parameter W_im8 bound to: 12'sb110100101011 
+	Parameter W_im9 bound to: 12'sb110011101000 
+	Parameter W_im10 bound to: 12'sb110010101100 
+	Parameter W_im11 bound to: 12'sb110001111000 
+	Parameter W_im12 bound to: 12'sb110001001101 
+	Parameter W_im13 bound to: 12'sb110000101100 
+	Parameter W_im14 bound to: 12'sb110000010011 
+	Parameter W_im15 bound to: 12'sb110000000100 
+	Parameter W_im16 bound to: 12'sb110000000000 
+	Parameter W_im17 bound to: 12'sb110000000100 
+	Parameter W_im18 bound to: 12'sb110000010011 
+	Parameter W_im19 bound to: 12'sb110000101100 
+	Parameter W_im20 bound to: 12'sb110001001101 
+	Parameter W_im21 bound to: 12'sb110001111000 
+	Parameter W_im22 bound to: 12'sb110010101100 
+	Parameter W_im23 bound to: 12'sb110011101000 
+	Parameter W_im24 bound to: 12'sb110100101011 
+	Parameter W_im25 bound to: 12'sb110101110110 
+	Parameter W_im26 bound to: 12'sb110111000111 
+	Parameter W_im27 bound to: 12'sb111000011101 
+	Parameter W_im28 bound to: 12'sb111001111000 
+	Parameter W_im29 bound to: 12'sb111011010110 
+	Parameter W_im30 bound to: 12'sb111100111000 
+	Parameter W_im31 bound to: 12'sb111110011011 
+INFO: [Synth 8-256] done synthesizing module 'MULT__parameterized2' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+INFO: [Synth 8-256] done synthesizing module 'Stage__parameterized2' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+INFO: [Synth 8-638] synthesizing module 'Stage__parameterized3' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+	Parameter BW bound to: 21 - type: integer 
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Shift_Reg__parameterized3' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+	Parameter BW bound to: 21 - type: integer 
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Shift_Reg__parameterized3' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Shift_Reg.v:34]
+INFO: [Synth 8-638] synthesizing module 'BF__parameterized3' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+	Parameter BW bound to: 21 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BF__parameterized3' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+INFO: [Synth 8-638] synthesizing module 'MULT__parameterized3' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+	Parameter BW bound to: 21 - type: integer 
+	Parameter N bound to: 2 - type: integer 
+	Parameter W_re0 bound to: 12'sb010000000000 
+	Parameter W_re1 bound to: 12'sb001111111011 
+	Parameter W_re2 bound to: 12'sb001111101100 
+	Parameter W_re3 bound to: 12'sb001111010011 
+	Parameter W_re4 bound to: 12'sb001110110010 
+	Parameter W_re5 bound to: 12'sb001110000111 
+	Parameter W_re6 bound to: 12'sb001101010011 
+	Parameter W_re7 bound to: 12'sb001100010111 
+	Parameter W_re8 bound to: 12'sb001011010100 
+	Parameter W_re9 bound to: 12'sb001010001001 
+	Parameter W_re10 bound to: 12'sb001000111000 
+	Parameter W_re11 bound to: 12'sb000111100010 
+	Parameter W_re12 bound to: 12'sb000110000111 
+	Parameter W_re13 bound to: 12'sb000100101001 
+	Parameter W_re14 bound to: 12'sb000011000111 
+	Parameter W_re15 bound to: 12'sb000001100100 
+	Parameter W_re16 bound to: 12'sb000000000000 
+	Parameter W_re17 bound to: 12'sb111110011011 
+	Parameter W_re18 bound to: 12'sb111100111000 
+	Parameter W_re19 bound to: 12'sb111011010110 
+	Parameter W_re20 bound to: 12'sb111001111000 
+	Parameter W_re21 bound to: 12'sb111000011101 
+	Parameter W_re22 bound to: 12'sb110111000111 
+	Parameter W_re23 bound to: 12'sb110101110110 
+	Parameter W_re24 bound to: 12'sb110100101011 
+	Parameter W_re25 bound to: 12'sb110011101000 
+	Parameter W_re26 bound to: 12'sb110010101100 
+	Parameter W_re27 bound to: 12'sb110001111000 
+	Parameter W_re28 bound to: 12'sb110001001101 
+	Parameter W_re29 bound to: 12'sb110000101100 
+	Parameter W_re30 bound to: 12'sb110000010011 
+	Parameter W_re31 bound to: 12'sb110000000100 
+	Parameter W_im0 bound to: 12'sb000000000000 
+	Parameter W_im1 bound to: 12'sb111110011011 
+	Parameter W_im2 bound to: 12'sb111100111000 
+	Parameter W_im3 bound to: 12'sb111011010110 
+	Parameter W_im4 bound to: 12'sb111001111000 
+	Parameter W_im5 bound to: 12'sb111000011101 
+	Parameter W_im6 bound to: 12'sb110111000111 
+	Parameter W_im7 bound to: 12'sb110101110110 
+	Parameter W_im8 bound to: 12'sb110100101011 
+	Parameter W_im9 bound to: 12'sb110011101000 
+	Parameter W_im10 bound to: 12'sb110010101100 
+	Parameter W_im11 bound to: 12'sb110001111000 
+	Parameter W_im12 bound to: 12'sb110001001101 
+	Parameter W_im13 bound to: 12'sb110000101100 
+	Parameter W_im14 bound to: 12'sb110000010011 
+	Parameter W_im15 bound to: 12'sb110000000100 
+	Parameter W_im16 bound to: 12'sb110000000000 
+	Parameter W_im17 bound to: 12'sb110000000100 
+	Parameter W_im18 bound to: 12'sb110000010011 
+	Parameter W_im19 bound to: 12'sb110000101100 
+	Parameter W_im20 bound to: 12'sb110001001101 
+	Parameter W_im21 bound to: 12'sb110001111000 
+	Parameter W_im22 bound to: 12'sb110010101100 
+	Parameter W_im23 bound to: 12'sb110011101000 
+	Parameter W_im24 bound to: 12'sb110100101011 
+	Parameter W_im25 bound to: 12'sb110101110110 
+	Parameter W_im26 bound to: 12'sb110111000111 
+	Parameter W_im27 bound to: 12'sb111000011101 
+	Parameter W_im28 bound to: 12'sb111001111000 
+	Parameter W_im29 bound to: 12'sb111011010110 
+	Parameter W_im30 bound to: 12'sb111100111000 
+	Parameter W_im31 bound to: 12'sb111110011011 
+INFO: [Synth 8-256] done synthesizing module 'MULT__parameterized3' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/MULT.v:34]
+INFO: [Synth 8-256] done synthesizing module 'Stage__parameterized3' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage.v:34]
+INFO: [Synth 8-638] synthesizing module 'Stage6' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage6.v:34]
+	Parameter BW bound to: 22 - type: integer 
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BF__parameterized4' [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+	Parameter BW bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BF__parameterized4' (5#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/BF.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Stage6' (6#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Stage6.v:34]
+INFO: [Synth 8-256] done synthesizing module 'Top_FFT' (7#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Top_FFT.v:35]
+INFO: [Synth 8-256] done synthesizing module 'axis_fft' (8#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/axis_fft.v:35]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axis_fft_0_0' (9#1) [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ip/design_1_axis_fft_0_0/synth/design_1_axis_fft_0_0.v:57]
+WARNING: [Synth 8-3331] design MULT__parameterized3 has unconnected port cnt[4]
+WARNING: [Synth 8-3331] design MULT__parameterized3 has unconnected port cnt[3]
+WARNING: [Synth 8-3331] design MULT__parameterized3 has unconnected port cnt[2]
+WARNING: [Synth 8-3331] design MULT__parameterized3 has unconnected port cnt[1]
+WARNING: [Synth 8-3331] design Stage__parameterized3 has unconnected port cnt[5]
+WARNING: [Synth 8-3331] design MULT__parameterized2 has unconnected port cnt[4]
+WARNING: [Synth 8-3331] design MULT__parameterized2 has unconnected port cnt[3]
+WARNING: [Synth 8-3331] design MULT__parameterized2 has unconnected port cnt[2]
+WARNING: [Synth 8-3331] design Stage__parameterized2 has unconnected port cnt[5]
+WARNING: [Synth 8-3331] design MULT__parameterized1 has unconnected port cnt[4]
+WARNING: [Synth 8-3331] design MULT__parameterized1 has unconnected port cnt[3]
+WARNING: [Synth 8-3331] design Stage__parameterized1 has unconnected port cnt[5]
+WARNING: [Synth 8-3331] design MULT__parameterized0 has unconnected port cnt[4]
+WARNING: [Synth 8-3331] design Stage__parameterized0 has unconnected port cnt[5]
+WARNING: [Synth 8-3331] design Stage has unconnected port cnt[5]
+WARNING: [Synth 8-3331] design axis_fft has unconnected port m_axis_aresetn
+WARNING: [Synth 8-3331] design axis_fft has unconnected port m_axis_aclk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 508.758 ; gain = 149.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 508.758 ; gain = 149.969
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.222 . Memory (MB): peak = 864.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 864.840 ; gain = 506.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 864.840 ; gain = 506.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 864.840 ; gain = 506.051
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Counter.v:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:01:16 . Memory (MB): peak = 864.840 ; gain = 506.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 2     
+	   3 Input     22 Bit       Adders := 2     
+	   2 Input     21 Bit       Adders := 2     
+	   3 Input     21 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 2     
+	   3 Input     20 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 2     
+	   3 Input     19 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 6     
+	               20 Bit    Registers := 10    
+	               19 Bit    Registers := 18    
+	               18 Bit    Registers := 34    
+	               17 Bit    Registers := 66    
+	               16 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 4     
+	   2 Input     21 Bit        Muxes := 6     
+	   2 Input     20 Bit        Muxes := 6     
+	   2 Input     19 Bit        Muxes := 6     
+	   2 Input     18 Bit        Muxes := 6     
+	   2 Input     17 Bit        Muxes := 6     
+	   8 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Shift_Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 32    
+Module BF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 2     
+Module Stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 6     
+Module Shift_Reg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 16    
+Module BF__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
+Module Stage__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 6     
+Module Shift_Reg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 8     
+Module BF__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   3 Input     19 Bit       Adders := 2     
+Module MULT__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     12 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+Module Stage__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 6     
+Module Shift_Reg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 4     
+Module BF__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 2     
+	   3 Input     20 Bit       Adders := 2     
+Module MULT__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+Module Stage__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 6     
+Module Shift_Reg__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 2     
+Module BF__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 2     
+	   3 Input     21 Bit       Adders := 2     
+Module MULT__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module Stage__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 6     
+Module BF__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 2     
+	   3 Input     22 Bit       Adders := 2     
+Module Stage6 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 4     
+Module Top_FFT 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element inst/inst_FFT/cnt0/cnt_reg was removed.  [c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ipshared/a394/Counter.v:42]
+DSP Report: Generating DSP inst/inst_FFT/stage1/mult0/buf_im0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage1/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage1/mult0/buf_im0.
+DSP Report: Generating DSP inst/inst_FFT/stage1/mult0/buf_im, operation Mode is: PCIN+A*B.
+DSP Report: operator inst/inst_FFT/stage1/mult0/buf_im is absorbed into DSP inst/inst_FFT/stage1/mult0/buf_im.
+DSP Report: operator inst/inst_FFT/stage1/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage1/mult0/buf_im.
+DSP Report: Generating DSP inst/inst_FFT/stage1/mult0/buf_re0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage1/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage1/mult0/buf_re0.
+DSP Report: Generating DSP inst/inst_FFT/stage1/mult0/buf_re, operation Mode is: PCIN-A*B.
+DSP Report: operator inst/inst_FFT/stage1/mult0/buf_re is absorbed into DSP inst/inst_FFT/stage1/mult0/buf_re.
+DSP Report: operator inst/inst_FFT/stage1/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage1/mult0/buf_re.
+DSP Report: Generating DSP inst/inst_FFT/stage2/mult0/buf_im0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage2/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage2/mult0/buf_im0.
+DSP Report: Generating DSP inst/inst_FFT/stage2/mult0/buf_im, operation Mode is: PCIN+A*B.
+DSP Report: operator inst/inst_FFT/stage2/mult0/buf_im is absorbed into DSP inst/inst_FFT/stage2/mult0/buf_im.
+DSP Report: operator inst/inst_FFT/stage2/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage2/mult0/buf_im.
+DSP Report: Generating DSP inst/inst_FFT/stage2/mult0/buf_re0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage2/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage2/mult0/buf_re0.
+DSP Report: Generating DSP inst/inst_FFT/stage2/mult0/buf_re, operation Mode is: PCIN-A*B.
+DSP Report: operator inst/inst_FFT/stage2/mult0/buf_re is absorbed into DSP inst/inst_FFT/stage2/mult0/buf_re.
+DSP Report: operator inst/inst_FFT/stage2/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage2/mult0/buf_re.
+DSP Report: Generating DSP inst/inst_FFT/stage3/mult0/buf_im0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage3/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage3/mult0/buf_im0.
+DSP Report: Generating DSP inst/inst_FFT/stage3/mult0/buf_im, operation Mode is: PCIN+A*B.
+DSP Report: operator inst/inst_FFT/stage3/mult0/buf_im is absorbed into DSP inst/inst_FFT/stage3/mult0/buf_im.
+DSP Report: operator inst/inst_FFT/stage3/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage3/mult0/buf_im.
+DSP Report: Generating DSP inst/inst_FFT/stage3/mult0/buf_re0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage3/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage3/mult0/buf_re0.
+DSP Report: Generating DSP inst/inst_FFT/stage3/mult0/buf_re, operation Mode is: PCIN-A*B.
+DSP Report: operator inst/inst_FFT/stage3/mult0/buf_re is absorbed into DSP inst/inst_FFT/stage3/mult0/buf_re.
+DSP Report: operator inst/inst_FFT/stage3/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage3/mult0/buf_re.
+DSP Report: Generating DSP inst/inst_FFT/stage4/mult0/buf_im0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage4/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage4/mult0/buf_im0.
+DSP Report: Generating DSP inst/inst_FFT/stage4/mult0/buf_im, operation Mode is: PCIN+A*B.
+DSP Report: operator inst/inst_FFT/stage4/mult0/buf_im is absorbed into DSP inst/inst_FFT/stage4/mult0/buf_im.
+DSP Report: operator inst/inst_FFT/stage4/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage4/mult0/buf_im.
+DSP Report: Generating DSP inst/inst_FFT/stage4/mult0/buf_re0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage4/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage4/mult0/buf_re0.
+DSP Report: Generating DSP inst/inst_FFT/stage4/mult0/buf_re, operation Mode is: PCIN-A*B.
+DSP Report: operator inst/inst_FFT/stage4/mult0/buf_re is absorbed into DSP inst/inst_FFT/stage4/mult0/buf_re.
+DSP Report: operator inst/inst_FFT/stage4/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage4/mult0/buf_re.
+DSP Report: Generating DSP inst/inst_FFT/stage5/mult0/buf_im0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage5/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage5/mult0/buf_im0.
+DSP Report: Generating DSP inst/inst_FFT/stage5/mult0/buf_im, operation Mode is: PCIN+A*B.
+DSP Report: operator inst/inst_FFT/stage5/mult0/buf_im is absorbed into DSP inst/inst_FFT/stage5/mult0/buf_im.
+DSP Report: operator inst/inst_FFT/stage5/mult0/buf_im0 is absorbed into DSP inst/inst_FFT/stage5/mult0/buf_im.
+DSP Report: Generating DSP inst/inst_FFT/stage5/mult0/buf_re0, operation Mode is: A*B.
+DSP Report: operator inst/inst_FFT/stage5/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage5/mult0/buf_re0.
+DSP Report: Generating DSP inst/inst_FFT/stage5/mult0/buf_re, operation Mode is: PCIN-A*B.
+DSP Report: operator inst/inst_FFT/stage5/mult0/buf_re is absorbed into DSP inst/inst_FFT/stage5/mult0/buf_re.
+DSP Report: operator inst/inst_FFT/stage5/mult0/buf_re0 is absorbed into DSP inst/inst_FFT/stage5/mult0/buf_re.
+WARNING: [Synth 8-3331] design design_1_axis_fft_0_0 has unconnected port m_axis_aresetn
+WARNING: [Synth 8-3331] design design_1_axis_fft_0_0 has unconnected port m_axis_aclk
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:34 . Memory (MB): peak = 864.840 ; gain = 506.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------------+------------------------------------+---------------+----------------+
+|Module Name           | RTL Object                         | Depth x Width | Implemented As | 
++----------------------+------------------------------------+---------------+----------------+
+|MULT                  | temp_re                            | 32x12         | LUT            | 
+|MULT                  | temp_im                            | 32x11         | LUT            | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage1/mult0/temp_re | 32x12         | LUT            | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage1/mult0/temp_im | 32x11         | LUT            | 
++----------------------+------------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MULT        | A*B         | 17     | 11     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN+A*B    | 17     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 17     | 12     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN-A*B    | 17     | 11     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 18     | 11     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN+A*B    | 18     | 12     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN-A*B    | 18     | 11     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 19     | 11     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN+A*B    | 19     | 12     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 19     | 12     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN-A*B    | 19     | 11     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 20     | 11     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN+A*B    | 20     | 12     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 20     | 12     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN-A*B    | 20     | 11     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 21     | 11     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN+A*B    | 21     | 12     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | A*B         | 21     | 12     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MULT        | PCIN-A*B    | 21     | 11     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:02:19 . Memory (MB): peak = 915.594 ; gain = 556.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:02:20 . Memory (MB): peak = 918.219 ; gain = 559.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:48 ; elapsed = 00:02:22 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:51 ; elapsed = 00:02:26 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:51 ; elapsed = 00:02:26 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:02:26 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:02:26 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:02:26 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:02:26 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage1/sr1/sr_reg[31][16] | 32     | 17    | YES          | NO                 | YES               | 0      | 17      | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage1/sr0/sr_reg[31][16] | 32     | 17    | YES          | NO                 | YES               | 0      | 17      | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage2/sr1/sr_reg[15][17] | 16     | 18    | YES          | NO                 | YES               | 18     | 0       | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage2/sr0/sr_reg[15][17] | 16     | 18    | YES          | NO                 | YES               | 18     | 0       | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage3/sr1/sr_reg[7][18]  | 8      | 19    | YES          | NO                 | YES               | 19     | 0       | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage3/sr0/sr_reg[7][18]  | 8      | 19    | YES          | NO                 | YES               | 19     | 0       | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage4/sr1/sr_reg[3][19]  | 4      | 20    | YES          | NO                 | YES               | 20     | 0       | 
+|design_1_axis_fft_0_0 | inst/inst_FFT/stage4/sr0/sr_reg[3][19]  | 4      | 20    | YES          | NO                 | YES               | 20     | 0       | 
++----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   180|
+|2     |DSP48E1 |    20|
+|3     |LUT1    |    14|
+|4     |LUT2    |   782|
+|5     |LUT3    |   470|
+|6     |LUT4    |   213|
+|7     |LUT5    |    24|
+|8     |LUT6    |     7|
+|9     |SRL16E  |   114|
+|10    |SRLC32E |    34|
+|11    |FDRE    |   683|
+|12    |FDSE    |     8|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------+----------------------------+------+
+|      |Instance      |Module                      |Cells |
++------+--------------+----------------------------+------+
+|1     |top           |                            |  2549|
+|2     |  inst        |axis_fft                    |  2549|
+|3     |    inst_FFT  |Top_FFT                     |  2549|
+|4     |      cnt0    |Counter                     |    86|
+|5     |      stage1  |Stage                       |   434|
+|6     |        bf0   |BF                          |    30|
+|7     |        mult0 |MULT                        |    48|
+|8     |        sr0   |Shift_Reg                   |   130|
+|9     |        sr1   |Shift_Reg_4                 |   162|
+|10    |      stage2  |Stage__parameterized0       |   424|
+|11    |        bf0   |BF__parameterized0          |    20|
+|12    |        mult0 |MULT__parameterized0        |    50|
+|13    |        sr0   |Shift_Reg__parameterized0   |   107|
+|14    |        sr1   |Shift_Reg__parameterized0_3 |   107|
+|15    |      stage3  |Stage__parameterized1       |   446|
+|16    |        bf0   |BF__parameterized1          |    20|
+|17    |        mult0 |MULT__parameterized1        |    52|
+|18    |        sr0   |Shift_Reg__parameterized1   |   113|
+|19    |        sr1   |Shift_Reg__parameterized1_2 |   113|
+|20    |      stage4  |Stage__parameterized2       |   468|
+|21    |        bf0   |BF__parameterized2          |    20|
+|22    |        mult0 |MULT__parameterized2        |    54|
+|23    |        sr0   |Shift_Reg__parameterized2   |   119|
+|24    |        sr1   |Shift_Reg__parameterized2_1 |   119|
+|25    |      stage5  |Stage__parameterized3       |   413|
+|26    |        bf0   |BF__parameterized3          |    34|
+|27    |        mult0 |MULT__parameterized3        |    58|
+|28    |        sr0   |Shift_Reg__parameterized3   |   121|
+|29    |        sr1   |Shift_Reg__parameterized3_0 |   120|
+|30    |      stage6  |Stage6                      |   272|
+|31    |        bf0   |BF__parameterized4          |    72|
++------+--------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:02:26 . Memory (MB): peak = 933.176 ; gain = 574.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:02:00 . Memory (MB): peak = 933.176 ; gain = 218.305
+Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:02:27 . Memory (MB): peak = 933.176 ; gain = 574.387
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:58 ; elapsed = 00:02:36 . Memory (MB): peak = 933.176 ; gain = 585.859
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.runs/design_1_axis_fft_0_0_synth_1/design_1_axis_fft_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.srcs/sources_1/bd/design_1/ip/design_1_axis_fft_0_0/design_1_axis_fft_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 30 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mbin9/Documents/19-2-project/19_2_soc_design/work/FFTDMABASE/FFTDMABASE.runs/design_1_axis_fft_0_0_synth_1/design_1_axis_fft_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axis_fft_0_0_utilization_synth.rpt -pb design_1_axis_fft_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 933.176 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 13:44:22 2019...
