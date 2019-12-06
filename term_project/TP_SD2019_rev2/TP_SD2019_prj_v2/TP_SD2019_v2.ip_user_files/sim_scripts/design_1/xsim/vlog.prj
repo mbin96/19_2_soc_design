@@ -1,0 +1,28 @@
+verilog xil_defaultlib --include "../../../../TP_SD2019_v2.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../TP_SD2019_v2.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../TP_SD2019_v2.srcs/sources_1/bd/design_1/ipshared/1313/hdl" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_I_BRAM_0.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_O_BRAM_0.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_W_BRAM_0_0.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_mac_mulacud.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_mac_muladEe.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_mac_mulafYi.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_mul_mul_bkb.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2_mux_83_1eOg.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/computation.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/data_transfer_f.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/data_transfer_i.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/data_transfer_ofo.v" \
+"../../../bd/design_1/ipshared/fdbf/verilog/HLS2x8_2.v" \
+"../../../bd/design_1/ip/design_1_HLS2x8_2_0_0/sim/design_1_HLS2x8_2_0_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/ip/design_1_auto_us_2/sim/design_1_auto_us_2.v" \
+"../../../bd/design_1/ip/design_1_auto_us_1/sim/design_1_auto_us_1.v" \
+"../../../bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

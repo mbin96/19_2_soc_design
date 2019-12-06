@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# 
+# Start of session at: Fri Dec  6 16:39:06 2019
+# Process ID: 19444
+# Current directory: C:/Users/hyeon/project_19-2/19_2_soc_design/TP_SD2019_rev2/TP_SD2019_prj_v2/TP_SD2019_v2.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/hyeon/project_19-2/19_2_soc_design/TP_SD2019_rev2/TP_SD2019_prj_v2/TP_SD2019_v2.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/hyeon/project_19-2/19_2_soc_design/TP_SD2019_rev2/TP_SD2019_prj_v2/TP_SD2019_v2.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
